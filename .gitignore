@@ -5,3 +5,4 @@ token.json
 # other files
 todo
 school-lookup.xlsx
+__pycache__/
