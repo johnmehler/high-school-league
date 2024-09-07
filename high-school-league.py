@@ -26,6 +26,10 @@ def run_give_access(spreadsheet_url, emails):
         print(f"An error occurred: {e}")
 
 def run_send_emails(spreadsheet_url, emails):
+    # Ensure emails is a list
+    if isinstance(emails, tuple):
+        emails = list(emails)
+
     command = ['python', 'send-emails.py', spreadsheet_url] + emails
     try:
         result = subprocess.run(command, capture_output=True, text=True)

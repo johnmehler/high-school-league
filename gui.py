@@ -55,8 +55,8 @@ def run_gui(on_submit_callback):
     # Top row with match headers
     tk.Label(root, text=" ").grid(row=0, column=0, padx=10, pady=5)
     tk.Label(root, text="Team 1:").grid(row=0, column=1, padx=10, pady=5)
-    tk.Label(root, text="Output 1").grid(row=0, column=2, padx=10, pady=5)
-    tk.Label(root, text="Output 2").grid(row=0, column=3, padx=10, pady=5)
+    tk.Label(root, text="School").grid(row=0, column=2, padx=10, pady=5)
+    tk.Label(root, text="Email").grid(row=0, column=3, padx=10, pady=5)
 
     # Labels and Entry fields for team 1 code
     tk.Label(root, text="Team 1:").grid(row=1, column=0, padx=10, pady=5, sticky="e")
