@@ -11,16 +11,21 @@ def send_email(spreadsheet_link, recipients):
     
     # Email content
     subject = "High School League Spreadsheet"
-    body = f"""Hello,
+    body = f"""
+Team line-ups should be completed **two days before the match**. Please ensure that students in the line-up are registered to play for your team **at least one week before the match**.
 
-    The High School League spreadsheet has been created. You can access it using the following link:
+Students register once per academic year through:  
+https://chessctr.org/play/macl-player/
 
-    {spreadsheet_link}
+Each student must have an appropriate lichess.org account. We have assigned a school code for each school, and the username will be the school code followed by an underscore and the student's first name.  
+For example: **Bay_George** (where the school code is "Bay" and the student's first name is "George").  
+If a student played in a previous year, they should use their existing account rather than creating a new one.
 
-    Please let me know if you have any questions or need any assistance.
+Captains and coaches from both schools should arrange a mutually acceptable time for the match. The school's dismissal times and preferred match days are listed in the spreadsheet linked below:
 
-    Best regards,
-    John Mehler"""
+[Match Schedule Spreadsheet](https://docs.google.com/spreadsheets/d/1A0I-TPGZ64awCGI26_UxH_Y_0_XhMV4ty7ErGyMKrUM/edit?pli=1&gid=1154594297#gid=1154594297)
+"""
+
 
     # Set up the MIME
     message = MIMEMultipart()
